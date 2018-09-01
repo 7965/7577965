@@ -31,7 +31,7 @@ def newregister():  # func new register
     C = cold - oldcold
     E = elec - oldelec
     stock = H + C
-    for pr in open('price.txt'):
+    for pr in open('/home/vladick/7577965/project/price.txt'):
         pr = pr.split()
         pH = H * float(pr[0])
         pC = C * float(pr[1])
@@ -49,8 +49,8 @@ def openTxt():
     global price
     global ll
     global pr
-    l = open('register.txt','r+')
-    price = open('price.txt', 'r+')
+    l = open('/home/vladick/7577965/project/register.txt','r+')
+    price = open('/home/vladick/7577965/project/price.txt', 'r+')
     ll = list(l)
     pr = list(price)
 
